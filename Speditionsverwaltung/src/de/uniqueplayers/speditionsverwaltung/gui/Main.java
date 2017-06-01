@@ -7,7 +7,7 @@ package de.uniqueplayers.speditionsverwaltung.gui;
 
 /**
  *
- * @author Tim
+ * @author Oberleutnant20
  */
 public class Main extends javax.swing.JFrame {
 
@@ -39,7 +39,7 @@ public class Main extends javax.swing.JFrame {
         register_pf_passwd_repeat = new javax.swing.JPasswordField();
         register_bu_registrieren = new javax.swing.JButton();
         register_bu_back = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
+        register_lab_copyright = new javax.swing.JLabel();
         main_lab_header = new javax.swing.JLabel();
         main_lab_copyright = new javax.swing.JLabel();
         main_bu_reg = new javax.swing.JButton();
@@ -76,7 +76,7 @@ public class Main extends javax.swing.JFrame {
             }
         });
 
-        jLabel1.setText("©unique-players.de");
+        register_lab_copyright.setText("©unique-players.de");
 
         javax.swing.GroupLayout jFrame1Layout = new javax.swing.GroupLayout(jFrame1.getContentPane());
         jFrame1.getContentPane().setLayout(jFrame1Layout);
@@ -89,7 +89,7 @@ public class Main extends javax.swing.JFrame {
                         .addGap(0, 0, Short.MAX_VALUE)
                         .addGroup(jFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jFrame1Layout.createSequentialGroup()
-                                .addComponent(jLabel1)
+                                .addComponent(register_lab_copyright)
                                 .addContainerGap())
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jFrame1Layout.createSequentialGroup()
                                 .addGroup(jFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -112,9 +112,9 @@ public class Main extends javax.swing.JFrame {
                                         .addComponent(register_tf_username, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jFrame1Layout.createSequentialGroup()
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addGroup(jFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(register_pf_passwd, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(register_pf_passwd_repeat, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                        .addGroup(jFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                            .addComponent(register_pf_passwd, javax.swing.GroupLayout.DEFAULT_SIZE, 109, Short.MAX_VALUE)
+                                            .addComponent(register_pf_passwd_repeat)))))
                             .addGroup(jFrame1Layout.createSequentialGroup()
                                 .addComponent(register_bu_registrieren)
                                 .addGap(0, 0, Short.MAX_VALUE)))
@@ -146,7 +146,7 @@ public class Main extends javax.swing.JFrame {
                     .addComponent(register_bu_registrieren)
                     .addComponent(register_bu_back))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel1)
+                .addComponent(register_lab_copyright)
                 .addContainerGap())
         );
 
@@ -264,7 +264,6 @@ public class Main extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JFrame jFrame1;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JButton main_bu_login;
     private javax.swing.JButton main_bu_reg;
     private javax.swing.JLabel main_lab_copyright;
@@ -273,6 +272,7 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JButton register_bu_registrieren;
     private javax.swing.JLabel register_lab_EMail;
     private javax.swing.JLabel register_lab_Header;
+    private javax.swing.JLabel register_lab_copyright;
     private javax.swing.JLabel register_lab_passwd;
     private javax.swing.JLabel register_lab_passwd_repeat;
     private javax.swing.JLabel register_lab_userName;
