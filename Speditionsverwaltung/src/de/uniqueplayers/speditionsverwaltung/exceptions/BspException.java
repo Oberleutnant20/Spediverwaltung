@@ -3,7 +3,7 @@ package de.uniqueplayers.speditionsverwaltung.exceptions;
 
 /**
  *
- * @author Tim
+ * @author Oberleutnant20
  */
 public class BspException extends Exception{
     public BspException(){

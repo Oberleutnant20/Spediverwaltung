@@ -9,15 +9,15 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
- * Erzeugung von HTML-Konstrukten fuer den Dialog mit Datenbanken.
+ * Erzeugung von HTML-Konstrukten für den Dialog mit Datenbanken.
  *
- * @author rla
+ * @author Oberleutnant20
  */
 public class DbFunktion {
 
     /**
      * Verbindung zu einer Datenbank aufbauen. Beim Auftreten von Fehlern
-     * erfolgt kein Ausloesen einer Exception. Es wird eine Fehlermeldung auf
+     * erfolgt kein Auslösen einer Exception. Es wird eine Fehlermeldung auf
      * die Konsole ausgegeben.
      *
      * @param url Adresse und Namen der DB
@@ -91,7 +91,7 @@ public class DbFunktion {
      * "lastname") =>
      * <table><row><data>firstname</data><data>lastname</data></row>
      *
-     * @param args Feld fuer Zeichenketten mit variabler Laenge
+     * @param args Feld für Zeichenketten mit variabler Länge
      * @return
      */
     public static String htmlTableHead(String... args) {
