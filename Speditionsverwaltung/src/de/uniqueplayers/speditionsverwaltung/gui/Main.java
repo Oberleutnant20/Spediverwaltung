@@ -32,11 +32,14 @@ public class Main extends javax.swing.JFrame {
         register_lab_EMail = new javax.swing.JLabel();
         register_lab_userName = new javax.swing.JLabel();
         register_lab_passwd = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
+        register_lab_passwd_repeat = new javax.swing.JLabel();
         register_tf_username = new javax.swing.JTextField();
         register_tf_mail = new javax.swing.JTextField();
         register_pf_passwd = new javax.swing.JPasswordField();
         register_pf_passwd_repeat = new javax.swing.JPasswordField();
+        register_bu_registrieren = new javax.swing.JButton();
+        register_bu_back = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
         main_lab_header = new javax.swing.JLabel();
         main_lab_copyright = new javax.swing.JLabel();
         main_bu_reg = new javax.swing.JButton();
@@ -53,11 +56,27 @@ public class Main extends javax.swing.JFrame {
 
         register_lab_passwd.setText("<html><strong>Passwort</strong></htm>");
 
-        jLabel1.setText("<html><strong>Passwort wiederholen</strong></html>");
+        register_lab_passwd_repeat.setText("<html><strong>Passwort wiederholen</strong></html>");
 
         register_pf_passwd.setText("jPasswordField1");
 
         register_pf_passwd_repeat.setText("jPasswordField2");
+
+        register_bu_registrieren.setText("Registrieren");
+        register_bu_registrieren.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                register_bu_registrierenActionPerformed(evt);
+            }
+        });
+
+        register_bu_back.setText("Abbrechen");
+        register_bu_back.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                register_bu_backActionPerformed(evt);
+            }
+        });
+
+        jLabel1.setText("©unique-players.de");
 
         javax.swing.GroupLayout jFrame1Layout = new javax.swing.GroupLayout(jFrame1.getContentPane());
         jFrame1.getContentPane().setLayout(jFrame1Layout);
@@ -66,29 +85,40 @@ public class Main extends javax.swing.JFrame {
             .addGroup(jFrame1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel1)
-                    .addComponent(register_lab_EMail)
-                    .addComponent(register_lab_userName)
-                    .addComponent(register_lab_passwd))
-                .addGroup(jFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(jFrame1Layout.createSequentialGroup()
-                            .addGap(90, 90, 90)
-                            .addComponent(register_tf_mail, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addContainerGap())
-                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jFrame1Layout.createSequentialGroup()
-                            .addComponent(register_tf_username, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addContainerGap()))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jFrame1Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGap(0, 0, Short.MAX_VALUE)
                         .addGroup(jFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(register_pf_passwd, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(register_pf_passwd_repeat, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jFrame1Layout.createSequentialGroup()
+                                .addComponent(jLabel1)
+                                .addContainerGap())
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jFrame1Layout.createSequentialGroup()
+                                .addGroup(jFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(register_bu_back)
+                                    .addComponent(register_lab_Header, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(144, 144, 144))))
+                    .addGroup(jFrame1Layout.createSequentialGroup()
+                        .addGroup(jFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jFrame1Layout.createSequentialGroup()
+                                .addGroup(jFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(register_lab_passwd_repeat)
+                                    .addComponent(register_lab_EMail)
+                                    .addComponent(register_lab_userName)
+                                    .addComponent(register_lab_passwd))
+                                .addGroup(jFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(jFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addGroup(jFrame1Layout.createSequentialGroup()
+                                            .addGap(90, 90, 90)
+                                            .addComponent(register_tf_mail, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(register_tf_username, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jFrame1Layout.createSequentialGroup()
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addGroup(jFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(register_pf_passwd, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(register_pf_passwd_repeat, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                            .addGroup(jFrame1Layout.createSequentialGroup()
+                                .addComponent(register_bu_registrieren)
+                                .addGap(0, 0, Short.MAX_VALUE)))
                         .addContainerGap())))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jFrame1Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(register_lab_Header, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(144, 144, 144))
         );
         jFrame1Layout.setVerticalGroup(
             jFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -109,9 +139,15 @@ public class Main extends javax.swing.JFrame {
                     .addComponent(register_pf_passwd, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(register_lab_passwd_repeat, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(register_pf_passwd_repeat, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(136, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addGroup(jFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(register_bu_registrieren)
+                    .addComponent(register_bu_back))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel1)
+                .addContainerGap())
         );
 
         register_lab_Header.getAccessibleContext().setAccessibleName("<html><h3>Registrieren</h3></html>");
@@ -183,6 +219,14 @@ public class Main extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_main_bu_loginActionPerformed
 
+    private void register_bu_backActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_register_bu_backActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_register_bu_backActionPerformed
+
+    private void register_bu_registrierenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_register_bu_registrierenActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_register_bu_registrierenActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -225,9 +269,12 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JButton main_bu_reg;
     private javax.swing.JLabel main_lab_copyright;
     private javax.swing.JLabel main_lab_header;
+    private javax.swing.JButton register_bu_back;
+    private javax.swing.JButton register_bu_registrieren;
     private javax.swing.JLabel register_lab_EMail;
     private javax.swing.JLabel register_lab_Header;
     private javax.swing.JLabel register_lab_passwd;
+    private javax.swing.JLabel register_lab_passwd_repeat;
     private javax.swing.JLabel register_lab_userName;
     private javax.swing.JPasswordField register_pf_passwd;
     private javax.swing.JPasswordField register_pf_passwd_repeat;
