@@ -1,3 +1,9 @@
 
 DLL Einbinden:
 https://www.tutorials.de/threads/eine-dll-datei-in-java-library-path-einbinden.368407/
+
+System.properties:
+https://docs.oracle.com/javase/tutorial/essential/environment/sysprop.html
+
+Logs:
+https://stackoverflow.com/questions/15758685/how-to-write-logs-in-text-file-when-using-java-util-logging-logger
