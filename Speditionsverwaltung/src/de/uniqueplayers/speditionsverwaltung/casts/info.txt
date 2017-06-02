@@ -1,1 +1,0 @@
-Dieser Ordner wird verwendet, um mögliche cast zu schreiben, um fehler zu beheben.

@@ -12,8 +12,12 @@
             </test-roots>
         </data>
         <spellchecker-wordlist xmlns="http://www.netbeans.org/ns/spellchecker-wordlist/1">
+            <word>Castende</word>
+            <word>castenden</word>
+            <word>Castet</word>
             <word>Connection</word>
             <word>Exception</word>
+            <word>gecasteten</word>
             <word>html</word>
             <word>null</word>
             <word>Tabellenzeilen</word>

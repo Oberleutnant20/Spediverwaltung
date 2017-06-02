@@ -10,7 +10,7 @@ package de.uniqueplayers.speditionsverwaltung.gui;
  * @author Oberleutnant20
  */
 public class Main extends javax.swing.JFrame {
-
+    
     /**
      * Creates new form Main
      */
@@ -40,6 +40,7 @@ public class Main extends javax.swing.JFrame {
         register_bu_registrieren = new javax.swing.JButton();
         register_bu_back = new javax.swing.JButton();
         register_lab_copyright = new javax.swing.JLabel();
+        jFrame2 = new javax.swing.JFrame();
         main_lab_header = new javax.swing.JLabel();
         main_lab_copyright = new javax.swing.JLabel();
         main_bu_reg = new javax.swing.JButton();
@@ -94,7 +95,7 @@ public class Main extends javax.swing.JFrame {
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jFrame1Layout.createSequentialGroup()
                                 .addGroup(jFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                     .addComponent(register_bu_back)
-                                    .addComponent(register_lab_Header, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(register_lab_Header, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(144, 144, 144))))
                     .addGroup(jFrame1Layout.createSequentialGroup()
                         .addGroup(jFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -151,6 +152,17 @@ public class Main extends javax.swing.JFrame {
         );
 
         register_lab_Header.getAccessibleContext().setAccessibleName("<html><h3>Registrieren</h3></html>");
+
+        javax.swing.GroupLayout jFrame2Layout = new javax.swing.GroupLayout(jFrame2.getContentPane());
+        jFrame2.getContentPane().setLayout(jFrame2Layout);
+        jFrame2Layout.setHorizontalGroup(
+            jFrame2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 400, Short.MAX_VALUE)
+        );
+        jFrame2Layout.setVerticalGroup(
+            jFrame2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 300, Short.MAX_VALUE)
+        );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Speditionsverwaltung für ETS2/ATS");
@@ -212,11 +224,11 @@ public class Main extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void main_bu_regActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_main_bu_regActionPerformed
-        // TODO add your handling code here:
+        reg();
     }//GEN-LAST:event_main_bu_regActionPerformed
 
     private void main_bu_loginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_main_bu_loginActionPerformed
-        // TODO add your handling code here:
+        login();
     }//GEN-LAST:event_main_bu_loginActionPerformed
 
     private void register_bu_backActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_register_bu_backActionPerformed
@@ -257,13 +269,14 @@ public class Main extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Main().setVisible(true);
+               new Main().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JFrame jFrame1;
+    private javax.swing.JFrame jFrame2;
     private javax.swing.JButton main_bu_login;
     private javax.swing.JButton main_bu_reg;
     private javax.swing.JLabel main_lab_copyright;
@@ -281,4 +294,21 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JTextField register_tf_mail;
     private javax.swing.JTextField register_tf_username;
     // End of variables declaration//GEN-END:variables
+
+    // Platz für eigene Variablen
+    
+    
+    
+    
+    
+    
+    
+    // Methoden die in den Frames genutzt werden
+    private void reg() {
+        jFrame1.setVisible(true);
+    }
+
+    private void login() {
+        
+    }
 }
