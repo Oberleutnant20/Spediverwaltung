@@ -5,9 +5,11 @@
  */
 package de.uniqueplayers.speditionsverwaltung.log;
 
+import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.logging.FileHandler;
+import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.logging.SimpleFormatter;
 
@@ -16,22 +18,22 @@ import java.util.logging.SimpleFormatter;
  * @author Oberleutnant20
  */
 public class Loging {
-    private final Logger logger = Logger.getLogger(Loging.class
-            .getName());
-    private FileHandler fh = null;
+    private Logger logger = Logger.getLogger("MyLog");  
+    FileHandler fh;  
 
     public Loging() {
-        //just to make our log file nicer :)
-        SimpleDateFormat format = new SimpleDateFormat("M-d_HHmmss");
+        SimpleDateFormat formatDay = new SimpleDateFormat();
         try {
             fh = new FileHandler("C:/temp/test/MyLogFile_"
-                + format.format(Calendar.getInstance().getTime()) + ".log");
-        } catch (Exception e) {
-            e.printStackTrace();
+                + formatDay.format(Calendar.getInstance().getTime()) + ".log");
+            logger.addHandler(fh);
+            SimpleFormatter format = new SimpleFormatter();
+            fh.setFormatter(format);
+            logger.addHandler(fh);
+            logger.info("Test Message :D");
+        } catch (SecurityException | IOException ex) {
+            Logger.getLogger(Loging.class.getName()).log(Level.SEVERE, null, ex);
         }
-
-        fh.setFormatter(new SimpleFormatter());
-        logger.addHandler(fh);
     }
 
     public void doLogging() {
