@@ -1,0 +1,3 @@
+
+DLL Einbinden:
+https://www.tutorials.de/threads/eine-dll-datei-in-java-library-path-einbinden.368407/
