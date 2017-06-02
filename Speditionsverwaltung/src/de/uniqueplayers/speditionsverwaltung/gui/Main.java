@@ -127,7 +127,7 @@ public class Main extends javax.swing.JFrame {
                                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, fra_regLayout.createSequentialGroup()
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addGroup(fra_regLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                            .addComponent(register_pf_passwd, javax.swing.GroupLayout.DEFAULT_SIZE, 109, Short.MAX_VALUE)
+                                            .addComponent(register_pf_passwd)
                                             .addComponent(register_pf_passwd_repeat)))))
                             .addGroup(fra_regLayout.createSequentialGroup()
                                 .addComponent(register_bu_registrieren)
@@ -278,7 +278,7 @@ public class Main extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
         setTitle("Speditionsverwaltung für ETS2/ATS");
         setName("main"); // NOI18N
         setResizable(false);
