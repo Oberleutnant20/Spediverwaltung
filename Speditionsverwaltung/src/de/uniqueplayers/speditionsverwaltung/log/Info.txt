@@ -1,0 +1,16 @@
+Logfile Speichern:
+
+
+//System Properties
+os.name,
+os.version,
+user.home,
+file.separator
+
+
+Ewentuelle weitesre Daten:
+
+IP-Adresse,
+MAC-Adresse
+Hardware-Adressen
+
