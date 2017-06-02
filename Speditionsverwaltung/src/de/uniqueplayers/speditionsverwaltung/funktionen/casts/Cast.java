@@ -1,4 +1,4 @@
-package de.uniqueplayers.speditionsverwaltung.casts;
+package de.uniqueplayers.speditionsverwaltung.funktionen.casts;
 
 /**
  *

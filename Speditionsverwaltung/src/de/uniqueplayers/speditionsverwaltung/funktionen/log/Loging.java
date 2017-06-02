@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package de.uniqueplayers.speditionsverwaltung.log;
+package de.uniqueplayers.speditionsverwaltung.funktionen.log;
 
 import java.io.IOException;
 import java.text.SimpleDateFormat;

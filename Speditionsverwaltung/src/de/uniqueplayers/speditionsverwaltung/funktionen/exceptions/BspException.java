@@ -1,5 +1,5 @@
 
-package de.uniqueplayers.speditionsverwaltung.exceptions;
+package de.uniqueplayers.speditionsverwaltung.funktionen.exceptions;
 
 /**
  *
