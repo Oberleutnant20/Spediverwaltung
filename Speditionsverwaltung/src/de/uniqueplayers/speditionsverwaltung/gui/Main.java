@@ -58,7 +58,7 @@ public class Main extends javax.swing.JFrame {
         main_bu_login = new javax.swing.JButton();
 
         fra_reg.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        fra_reg.setMinimumSize(new java.awt.Dimension(376, 273));
+        fra_reg.setMinimumSize(new java.awt.Dimension(376, 293));
         fra_reg.setName("Registrieren"); // NOI18N
         fra_reg.setResizable(false);
 
@@ -166,7 +166,7 @@ public class Main extends javax.swing.JFrame {
 
         register_lab_Header.getAccessibleContext().setAccessibleName("<html><h3>Registrieren</h3></html>");
 
-        dia_reg.setMinimumSize(new java.awt.Dimension(498, 151));
+        dia_reg.setMinimumSize(new java.awt.Dimension(498, 191));
 
         dia_reg_ta_thx.setEditable(false);
         dia_reg_ta_thx.setColumns(20);
@@ -210,7 +210,7 @@ public class Main extends javax.swing.JFrame {
                 .addContainerGap(13, Short.MAX_VALUE))
         );
 
-        fra_login.setMinimumSize(new java.awt.Dimension(363, 181));
+        fra_login.setMinimumSize(new java.awt.Dimension(363, 191));
         fra_login.setName("login"); // NOI18N
         fra_login.setResizable(false);
 
@@ -278,7 +278,7 @@ public class Main extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Speditionsverwaltung für ETS2/ATS");
         setName("main"); // NOI18N
         setResizable(false);

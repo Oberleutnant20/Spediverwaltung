@@ -8,7 +8,7 @@
           <Color id="Standardcursor"/>
         </Property>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-          <Dimension value="[376, 273]"/>
+          <Dimension value="[376, 293]"/>
         </Property>
         <Property name="name" type="java.lang.String" value="Registrieren" noResource="true"/>
         <Property name="resizable" type="boolean" value="false"/>
@@ -179,7 +179,7 @@
     <Container class="javax.swing.JDialog" name="dia_reg">
       <Properties>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-          <Dimension value="[498, 151]"/>
+          <Dimension value="[498, 191]"/>
         </Property>
       </Properties>
 
@@ -245,7 +245,7 @@
     <Container class="javax.swing.JFrame" name="fra_login">
       <Properties>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-          <Dimension value="[363, 181]"/>
+          <Dimension value="[363, 191]"/>
         </Property>
         <Property name="name" type="java.lang.String" value="login" noResource="true"/>
         <Property name="resizable" type="boolean" value="false"/>
@@ -352,7 +352,7 @@
     </Container>
   </NonVisualComponents>
   <Properties>
-    <Property name="defaultCloseOperation" type="int" value="0"/>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
     <Property name="title" type="java.lang.String" value="Speditionsverwaltung f&#xfc;r ETS2/ATS"/>
     <Property name="name" type="java.lang.String" value="main" noResource="true"/>
     <Property name="resizable" type="boolean" value="false"/>
