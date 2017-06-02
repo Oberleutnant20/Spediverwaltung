@@ -40,7 +40,18 @@ public class Main extends javax.swing.JFrame {
         register_bu_registrieren = new javax.swing.JButton();
         register_bu_back = new javax.swing.JButton();
         register_lab_copyright = new javax.swing.JLabel();
+        dia_reg = new javax.swing.JDialog();
+        dia_reg_ta_thx = new javax.swing.JTextArea();
+        dia_reg_bu_main = new javax.swing.JButton();
+        dia_reg_lab_copyright = new javax.swing.JLabel();
         fra_login = new javax.swing.JFrame();
+        login_lab_Header = new javax.swing.JLabel();
+        login_tf_userName = new javax.swing.JTextField();
+        login_lab_userName = new javax.swing.JLabel();
+        login_lab_passwd = new javax.swing.JLabel();
+        login_pf_passwd = new javax.swing.JPasswordField();
+        login_lab_copyright = new javax.swing.JLabel();
+        login_bu_loginFin = new javax.swing.JButton();
         main_lab_header = new javax.swing.JLabel();
         main_lab_copyright = new javax.swing.JLabel();
         main_bu_reg = new javax.swing.JButton();
@@ -155,15 +166,116 @@ public class Main extends javax.swing.JFrame {
 
         register_lab_Header.getAccessibleContext().setAccessibleName("<html><h3>Registrieren</h3></html>");
 
+        dia_reg.setMinimumSize(new java.awt.Dimension(498, 151));
+
+        dia_reg_ta_thx.setEditable(false);
+        dia_reg_ta_thx.setColumns(20);
+        dia_reg_ta_thx.setRows(5);
+        dia_reg_ta_thx.setText("Vielen Dank, dass Sie sich registriert haben.\n\nBei Fragen und Anregungen steht Ihnen das Support-/Adminteam \nvon Unique-Players.de gerne zur verfügung oder schreiben Sie uns eine \nMail an: support@unique-players.de");
+
+        dia_reg_bu_main.setText("Startseite");
+        dia_reg_bu_main.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                dia_reg_bu_mainActionPerformed(evt);
+            }
+        });
+
+        dia_reg_lab_copyright.setText("©unique-players.de");
+
+        javax.swing.GroupLayout dia_regLayout = new javax.swing.GroupLayout(dia_reg.getContentPane());
+        dia_reg.getContentPane().setLayout(dia_regLayout);
+        dia_regLayout.setHorizontalGroup(
+            dia_regLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(dia_regLayout.createSequentialGroup()
+                .addGroup(dia_regLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(dia_regLayout.createSequentialGroup()
+                        .addGap(198, 198, 198)
+                        .addComponent(dia_reg_bu_main)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(dia_reg_lab_copyright))
+                    .addGroup(dia_regLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(dia_reg_ta_thx, javax.swing.GroupLayout.DEFAULT_SIZE, 464, Short.MAX_VALUE)))
+                .addContainerGap())
+        );
+        dia_regLayout.setVerticalGroup(
+            dia_regLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, dia_regLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(dia_reg_ta_thx, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(dia_regLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(dia_reg_bu_main)
+                    .addComponent(dia_reg_lab_copyright))
+                .addContainerGap(13, Short.MAX_VALUE))
+        );
+
+        fra_login.setMinimumSize(new java.awt.Dimension(363, 181));
+        fra_login.setName("login"); // NOI18N
+        fra_login.setResizable(false);
+
+        login_lab_Header.setText("<html><center><h2>Login</h2></center></html>");
+
+        login_lab_userName.setText("<html><strong>Benutzername</strong></html>");
+
+        login_lab_passwd.setText("<html><strong>Passwort</strong></html>");
+
+        login_pf_passwd.setText("jPasswordField1");
+
+        login_lab_copyright.setText("©unique-players.de");
+
+        login_bu_loginFin.setText("Login");
+        login_bu_loginFin.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                login_bu_loginFinActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout fra_loginLayout = new javax.swing.GroupLayout(fra_login.getContentPane());
         fra_login.getContentPane().setLayout(fra_loginLayout);
         fra_loginLayout.setHorizontalGroup(
             fra_loginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(fra_loginLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(fra_loginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, fra_loginLayout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addGroup(fra_loginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, fra_loginLayout.createSequentialGroup()
+                                .addComponent(login_lab_Header, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(142, 142, 142))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, fra_loginLayout.createSequentialGroup()
+                                .addComponent(login_lab_copyright)
+                                .addContainerGap())))
+                    .addGroup(fra_loginLayout.createSequentialGroup()
+                        .addGroup(fra_loginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addComponent(login_bu_loginFin, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(login_lab_passwd)
+                            .addComponent(login_lab_userName))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 142, Short.MAX_VALUE)
+                        .addGroup(fra_loginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(login_pf_passwd)
+                            .addComponent(login_tf_userName))
+                        .addContainerGap())))
         );
         fra_loginLayout.setVerticalGroup(
             fra_loginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(fra_loginLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(login_lab_Header, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addGroup(fra_loginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(login_tf_userName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(login_lab_userName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(fra_loginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(login_lab_passwd, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(login_pf_passwd, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 31, Short.MAX_VALUE)
+                .addGroup(fra_loginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(login_lab_copyright)
+                    .addComponent(login_bu_loginFin))
+                .addContainerGap())
         );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -231,16 +343,24 @@ public class Main extends javax.swing.JFrame {
     }//GEN-LAST:event_main_bu_regActionPerformed
 
     private void main_bu_loginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_main_bu_loginActionPerformed
-        login();
+        goToLogin();
     }//GEN-LAST:event_main_bu_loginActionPerformed
 
     private void register_bu_backActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_register_bu_backActionPerformed
-        // TODO add your handling code here:
+        backToMain_reg();
     }//GEN-LAST:event_register_bu_backActionPerformed
 
     private void register_bu_registrierenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_register_bu_registrierenActionPerformed
-        // TODO add your handling code here:
+        reg_finish();
     }//GEN-LAST:event_register_bu_registrierenActionPerformed
+
+    private void dia_reg_bu_mainActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dia_reg_bu_mainActionPerformed
+        backToMain();
+    }//GEN-LAST:event_dia_reg_bu_mainActionPerformed
+
+    private void login_bu_loginFinActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_login_bu_loginFinActionPerformed
+        login();
+    }//GEN-LAST:event_login_bu_loginFinActionPerformed
 
     /**
      * @param args the command line arguments
@@ -278,8 +398,19 @@ public class Main extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JDialog dia_reg;
+    private javax.swing.JButton dia_reg_bu_main;
+    private javax.swing.JLabel dia_reg_lab_copyright;
+    private javax.swing.JTextArea dia_reg_ta_thx;
     private javax.swing.JFrame fra_login;
     private javax.swing.JFrame fra_reg;
+    private javax.swing.JButton login_bu_loginFin;
+    private javax.swing.JLabel login_lab_Header;
+    private javax.swing.JLabel login_lab_copyright;
+    private javax.swing.JLabel login_lab_passwd;
+    private javax.swing.JLabel login_lab_userName;
+    private javax.swing.JPasswordField login_pf_passwd;
+    private javax.swing.JTextField login_tf_userName;
     private javax.swing.JButton main_bu_login;
     private javax.swing.JButton main_bu_reg;
     private javax.swing.JLabel main_lab_copyright;
@@ -309,6 +440,23 @@ public class Main extends javax.swing.JFrame {
     // Methoden die in den Frames genutzt werden
     private void reg() {
         fra_reg.setVisible(true);
+    }
+
+    private void goToLogin() {
+        fra_login.setVisible(true);
+    }
+
+    private void reg_finish() {
+        fra_reg.setVisible(false);
+        dia_reg.setVisible(true);
+    }
+
+    private void backToMain() {
+        dia_reg.setVisible(false);
+    }
+
+    private void backToMain_reg() {
+        fra_reg.setVisible(false);
     }
 
     private void login() {

@@ -176,20 +176,179 @@
         </Component>
       </SubComponents>
     </Container>
-    <Container class="javax.swing.JFrame" name="fra_login">
+    <Container class="javax.swing.JDialog" name="dia_reg">
+      <Properties>
+        <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[498, 151]"/>
+        </Property>
+      </Properties>
 
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-              <EmptySpace min="0" pref="400" max="32767" attributes="0"/>
+              <Group type="102" attributes="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="-2" pref="198" max="-2" attributes="0"/>
+                          <Component id="dia_reg_bu_main" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
+                          <Component id="dia_reg_lab_copyright" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="dia_reg_ta_thx" pref="464" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
-              <EmptySpace min="0" pref="300" max="32767" attributes="0"/>
+              <Group type="102" alignment="1" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="dia_reg_ta_thx" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="1" attributes="0">
+                      <Component id="dia_reg_bu_main" min="-2" max="-2" attributes="0"/>
+                      <Component id="dia_reg_lab_copyright" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace pref="13" max="32767" attributes="0"/>
+              </Group>
           </Group>
         </DimensionLayout>
       </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JTextArea" name="dia_reg_ta_thx">
+          <Properties>
+            <Property name="editable" type="boolean" value="false"/>
+            <Property name="columns" type="int" value="20"/>
+            <Property name="rows" type="int" value="5"/>
+            <Property name="text" type="java.lang.String" value="Vielen Dank, dass Sie sich registriert haben.&#xa;&#xa;Bei Fragen und Anregungen steht Ihnen das Support-/Adminteam &#xa;von Unique-Players.de gerne zur verf&#xfc;gung oder schreiben Sie uns eine &#xa;Mail an: support@unique-players.de"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="dia_reg_bu_main">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Startseite"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="dia_reg_bu_mainActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="dia_reg_lab_copyright">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="&#xa9;unique-players.de"/>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JFrame" name="fra_login">
+      <Properties>
+        <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[363, 181]"/>
+        </Property>
+        <Property name="name" type="java.lang.String" value="login" noResource="true"/>
+        <Property name="resizable" type="boolean" value="false"/>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="1" attributes="0">
+                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" alignment="1" attributes="0">
+                                  <Component id="login_lab_Header" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="142" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="1" attributes="0">
+                                  <Component id="login_lab_copyright" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                              <Component id="login_bu_loginFin" alignment="0" max="32767" attributes="0"/>
+                              <Component id="login_lab_passwd" max="32767" attributes="0"/>
+                              <Component id="login_lab_userName" max="32767" attributes="0"/>
+                          </Group>
+                          <EmptySpace pref="142" max="32767" attributes="0"/>
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="login_pf_passwd" max="32767" attributes="0"/>
+                              <Component id="login_tf_userName" max="32767" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="login_lab_Header" min="-2" pref="27" max="-2" attributes="0"/>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="login_tf_userName" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="login_lab_userName" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="login_lab_passwd" min="-2" max="-2" attributes="0"/>
+                      <Component id="login_pf_passwd" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace pref="31" max="32767" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="login_lab_copyright" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="login_bu_loginFin" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="login_lab_Header">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="&lt;html&gt;&lt;center&gt;&lt;h2&gt;Login&lt;/h2&gt;&lt;/center&gt;&lt;/html&gt;"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="login_tf_userName">
+        </Component>
+        <Component class="javax.swing.JLabel" name="login_lab_userName">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="&lt;html&gt;&lt;strong&gt;Benutzername&lt;/strong&gt;&lt;/html&gt;"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="login_lab_passwd">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="&lt;html&gt;&lt;strong&gt;Passwort&lt;/strong&gt;&lt;/html&gt;"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JPasswordField" name="login_pf_passwd">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="jPasswordField1"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="login_lab_copyright">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="&#xa9;unique-players.de"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="login_bu_loginFin">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Login"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="login_bu_loginFinActionPerformed"/>
+          </Events>
+        </Component>
+      </SubComponents>
     </Container>
   </NonVisualComponents>
   <Properties>
