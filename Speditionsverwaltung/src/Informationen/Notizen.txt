@@ -1,0 +1,2 @@
+DB Server:
+Der Datenbankserver läuft jetzt auf dem Root-Server unter dem Port 9001
