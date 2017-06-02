@@ -14,9 +14,7 @@ import java.util.Properties;
  */
 public class testMain {
     
-    public static void main(String[] args) {
-        Properties properties = new Properties();
-        
+    public static void main(String[] args) {        
         System.getProperties().list(System.out);
     }
     
