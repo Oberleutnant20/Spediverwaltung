@@ -27,7 +27,7 @@ Changes that are cosmetic in nature and do not add anything substantial to the s
 
 #### **Do you have questions about the source code?**
 
-* Ask any question about how to use? Than meet us on our [Teamspeak 3](ts3server://ts3.unique-players.de?port=9987&addbookmark=Unique-Players.de).
+* Ask any question about how to use? Than meet us on our Teamspeak 3(ts3server://ts3.unique-players.de?port=9987&addbookmark=Unique-Players.de) or in our [Forum](http://unique-players.de).
 
 #### **Coding conventions**
 
