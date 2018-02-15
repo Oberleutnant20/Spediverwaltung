@@ -46,4 +46,4 @@ Beginnen Sie mit dem Lesen unseres Codes und Sie werden den Dreh herausfinden. W
 
 Vielen Dank! :heart: :heart: :heart:
 
-Unique-Players.de Team
+Tim aka. Oberleutnant20
