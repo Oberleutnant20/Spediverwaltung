@@ -46,4 +46,4 @@ Start reading our code and you'll get the hang of it. We optimize for readabilit
 
 Thanks! :heart: :heart: :heart:
 
-Unique-Players.de Team
+Tim aka. Oberleutnant20
